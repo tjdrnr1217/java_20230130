@@ -27,10 +27,13 @@ public class Main4 {
 		 * System.out.println("C"); } else { System.out.println("D"); }
 		 */
 
+		
 		// 문제1) 입력받은 숫자 a가 짝수 인지 홀수 인지 확인
 		// 문제2) 입력받은 숫자가 3, 5, 3 5인지 확인
 		// ex) 15 => 3 5
 		// ex) 5 => 5
+		
+		//소스코드
 
 		if (a % 2 == 1) {
 			System.out.println(a + "은 홀수 입니다");
