@@ -19,6 +19,26 @@
   라이브러리 생성 방법 젤위에 파일 오른쪽 마우스 -> configure -> 젤 밑에꺼
   (구글에 lombok maven 검색하면 나온다) -->
 	<dependencies>
+		
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-sync</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.30</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -33,6 +53,5 @@
 			<artifactId>json</artifactId>
 			<version>20220320</version>
 		</dependency>
-		
 	</dependencies>
 </project>

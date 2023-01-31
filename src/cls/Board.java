@@ -37,59 +37,7 @@ public class Board {
 	Date brdDate = null ; // 등록일자
 	
 	
-	@Override
-	public String toString() {
-		return "Board [brdno=" + brdno + ", brdTitle=" + brdTitle + ", brdContent=" + brdContent + ", brdWriter="
-				+ brdWriter + ", brdHir=" + brdHir + ", brdDate=" + brdDate + "]";
-	}
-
-	public long getBrdno() {
-		return brdno;
-	}
 	
-	public void setBrdno(long brdno) {
-		this.brdno = brdno;
-	}
-	
-	public String getBrdTitle() {
-		return brdTitle;
-	}
-	
-	public void setBrdTitle(String brdTitle) {
-		this.brdTitle = brdTitle;
-	}
-	
-	public String getBrdContent() {
-		return brdContent;
-	}
-	
-	public void setBrdContent(String brdContent) {
-		this.brdContent = brdContent;
-	}
-	
-	public String getBrdWriter() {
-		return brdWriter;
-	}
-	
-	public void setBrdWriter(String brdWriter) {
-		this.brdWriter = brdWriter;
-	}
-	
-	public long getBrdHir() {
-		return brdHir;
-	}
-	
-	public void setBrdHir(long brdHir) {
-		this.brdHir = brdHir;
-	}
-	
-	public Date getBrdDate() {
-		return brdDate;
-	}
-	
-	public void setBrdDate(Date brdDate) {
-		this.brdDate = brdDate;
-	}
 	
 
 }
