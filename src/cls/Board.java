@@ -2,25 +2,39 @@ package cls;
 
 import java.util.Date;
 
-// ±Û¹øÈ£(long) brdNo
-// ±ÛÁ¦¸ñ(String) brdTitle
-// ±Û³»¿ë(String) brdContent
-// ÀÛ¼ºÀÚ(String) brdWriter
-// Á¶È¸¼ö(long) brdHit 
-// µî·ÏÀÏÀÚ(Date) brdDate
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+
+// ê¸€ë²ˆí˜¸(long) brdNo
+// ê¸€ì œëª©(String) brdTitle
+// ê¸€ë‚´ìš©(String) brdContent
+// ì‘ì„±ì(String) brdWriter
+// ì¡°íšŒìˆ˜(long) brdHit 
+// ë“±ë¡ì¼ì(Date) brdDate
+
+// lombok ë¼ì´ë¸ŒëŸ¬ë¦¬ => í¸ë¦¬ì„±, ì—°ê²°ì„±
+// ì˜¤ë¼í´ ë¼ì´ë¸ŒëŸ¬ë¦¬
+
+@Getter
+@Setter
+@ToString
+
 public class Board {
 	
-	// ÀûÀıÇÑ Å¸ÀÔÀ¸·Î ÇÊ¿äÇÑ Ç×¸ñÀ» ¸¸µå¼¼¿ä.
+	// ì ì ˆí•œ íƒ€ì…ìœ¼ë¡œ í•„ìš”í•œ í•­ëª©ì„ ë§Œë“œì„¸ìš”.
 	// getter / setter
-	// toStringÀ¸·Î ¸¸µå¼¼¿ä.
-	// Main5 »ı¼ºÇÑ ´ÙÀ½ °Ô½Ã±Û 1°³¸¦ ÀûÀıÇÏ ³»¿ëÀ¸·Î Ãß°¡ÇÑ ÈÄ Ãâ·ÂÇÏ±â
+	// toStringìœ¼ë¡œ ë§Œë“œì„¸ìš”.
+	// Main5 ìƒì„±í•œ ë‹¤ìŒ ê²Œì‹œê¸€ 1ê°œë¥¼ ì ì ˆí•˜ ë‚´ìš©ìœ¼ë¡œ ì¶”ê°€í•œ í›„ ì¶œë ¥í•˜ê¸°
 	
-	long brdno = 0;
-	String brdTitle = "";
-	String brdContent = "";
-	String brdWriter = "";
-	long brdHir = 0;
-	Date brdDate = null ;
+	private long brdno = 0L; //ê¸€ë²ˆí˜¸
+	private String brdTitle = ""; // ê¸€ì œëª©
+	private String brdContent = ""; // ê¸€ë‚´ìš©
+	private String brdWriter = ""; // ì‘ì„±ì
+	long brdHir = 0L; // ì¡°íšŒìˆ˜
+	Date brdDate = null ; // ë“±ë¡ì¼ì
 	
 	
 	@Override

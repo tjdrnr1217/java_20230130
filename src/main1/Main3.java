@@ -1,26 +1,25 @@
 package main1;
 
 
-//¹®ÀÚ¿­
+//ë¬¸ìì—´
 public class Main3 {
 	public static void main(String[] args) {
 		
-		//import¾ÈÇÏ¹Ç java.lang.*
-		//Å¬·¹½º¸í °´Ã¼¸í = new  Å¬·¹½º¸í(ÁØºñ¹°)
+		// importì•ˆí•˜ë©´ java.lang.*
+		// í´ë ˆìŠ¤ëª… ê°ì²´ëª… = new í´ë ˆìŠ¤ëª…(ì¤€ë¹„ë¬¼)
 		String str = new String("hello world");
 		String str1 = "hello world";
-		
-		//ret[0] = hello
-		//ret[1] = world
-		String[] ret = str.split(" "); //¿øÇÏ´Â ±âÁØ ¹®ÀÚ·Î ºĞÇÒÇÏ±â 
+
+		// ret[0] = hello
+		// ret[1] = world
+		String[] ret = str.split(" "); // ì›í•˜ëŠ” ê¸°ì¤€ ë¬¸ìë¡œ ë¶„í• í•˜ê¸°
 		System.out.println(ret[0]);
 		System.out.println(ret[1]);
-		
+
 		System.out.println(str);
 		System.out.println(str1);
-		// String Å¬·¹½ºÀÇ ±â´ÉÁß¿¡¼­ substringÀ» »ç¿ëÇÑ °æ¿ì
-		System.out.println(str.substring(0,3)); // hel(3Àº Æ÷ÇÔÇÏÁö ¾Ê´Â´Ù)
-		
+		// String í´ë ˆìŠ¤ì˜ ê¸°ëŠ¥ì¤‘ì—ì„œ substringì„ ì‚¬ìš©í•œ ê²½ìš°
+		System.out.println(str.substring(0, 3)); // hel(3ì€ í¬í•¨í•˜ì§€ ì•ŠëŠ”ë‹¤)
 
 	}
 

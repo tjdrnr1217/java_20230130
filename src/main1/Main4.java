@@ -7,7 +7,7 @@ import cls.Member;
 public class Main4 {
 
 	public static void main(String[] args) {
-		// Å¬·¹½º¸í °´Ã¼¸í = new Å¬·¹½º¸í();
+		// í´ë ˆìŠ¤ëª… ê°ì²´ëª… = new í´ë ˆìŠ¤ëª…();
 		Member member = new Member();
 		member.setUserId("tjdrnr1217");
 		member.setUseAge(28);
@@ -16,7 +16,7 @@ public class Main4 {
 		member.setUserPhone("010-0111-1111");
 		Date date = new Date();
 		member.setUserDate(date);
-		
+
 		System.out.println(member.toString());
 
 	}

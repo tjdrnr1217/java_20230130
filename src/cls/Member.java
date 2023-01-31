@@ -2,83 +2,77 @@ package cls;
 
 import java.util.Date;
 
-//³»°¡ ¿øÇÏ´Â Å¸ÀÔÀ» ¸¸µë. ½ÇÇàÇÏ´Â Å¬·¹½º ¾Æ´Ô!!
-//¾ÆÀÌµğ, ¾ÏÈ£, ÀÌ¸ŞÀÏ, ³ªÀÌ, ¿¬¶ôÃ³, °¡ÀÔÀÏÀÚ...(¼³°è»ó¿¡¼­ Á¤ÇØÁö´Â Ç×¸ñ)
+//ë‚´ê°€ ì›í•˜ëŠ” íƒ€ì…ì„ ë§Œë“¬. ì‹¤í–‰í•˜ëŠ” í´ë ˆìŠ¤ ì•„ë‹˜!!
+//ì•„ì´ë””, ì•”í˜¸, ì´ë©”ì¼, ë‚˜ì´, ì—°ë½ì²˜, ê°€ì…ì¼ì...(ì„¤ê³„ìƒì—ì„œ ì •í•´ì§€ëŠ” í•­ëª©)
 public class Member {
-	
+
 	String userId = "";
 	String userPw = "";
 	String userEmail = "";
 	int useAge = 0; // 01012345678 => 1012345678, 001=> 1
 	String userPhone = "000-0000-0000";
-	Date userDate = null; // Å¬·¹½ºÇüÀÇ Å¸ÀÔÀ» ¸¸µé¾î ³õÀ½
-	
-	
-	
+	Date userDate = null; // í´ë ˆìŠ¤í˜•ì˜ íƒ€ì…ì„ ë§Œë“¤ì–´ ë†“ìŒ
+
 	@Override
-	public String toString() { //¸¶¿ì½º ¿À¸¥ÂÊ -> ¼Ò½º -> toString
+	public String toString() { // ë§ˆìš°ìŠ¤ ì˜¤ë¥¸ìª½ -> ì†ŒìŠ¤ -> toString
 		return "Member [userId=" + userId + ", userPw=" + userPw + ", userEmail=" + userEmail + ", useAge=" + useAge
 				+ ", userPhone=" + userPhone + ", userDate=" + userDate + "]";
 	}
 
-	// ¸Ş¼Òµå, ÇÔ¼ö
-	// 1.Main4¿¡¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù. Public
-	// 2.¹İÈ¯Å¸ÀÔ ¹®ÀÚ·Î ¹İÈ¯ÇØ¾ß ÇÔ.
-	// 3.¸Ş¼Òµå¸í(Main4¿¡¼­ Àü´ŞÇÒ °ª )
+	// ë©”ì†Œë“œ, í•¨ìˆ˜
+	// 1.Main4ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤. Public
+	// 2.ë°˜í™˜íƒ€ì… ë¬¸ìë¡œ ë°˜í™˜í•´ì•¼ í•¨.
+	// 3.ë©”ì†Œë“œëª…(Main4ì—ì„œ ì „ë‹¬í•  ê°’ )
 	public String getUserId() {
 		return userId;
 	}
-	
-	//void´Â ¹İÈ¯µÇÁö ¾Ê´Â´Ù.
-	public void setUserId(String userId) { 
-		this.userId = userId; // À§¿¡ Á¤ÀÇµÈ º¯¼ö¿¡ ³Ö°Ú´Ù
+
+	// voidëŠ” ë°˜í™˜ë˜ì§€ ì•ŠëŠ”ë‹¤.
+	public void setUserId(String userId) {
+		this.userId = userId; // ìœ„ì— ì •ì˜ëœ ë³€ìˆ˜ì— ë„£ê² ë‹¤
 	}
-	
+
 	public String getUserPw() {
 		return userPw;
 	}
-	
+
 	public void setUserPw(String userPw) {
 		this.userPw = userPw;
 	}
-	
+
 	public String getUserEmail() {
 		return userEmail;
 	}
-	
+
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
-	
+
 	public int getUseAge() {
 		return useAge;
 	}
-	
+
 	public void setUseAge(int useAge) {
 		this.useAge = useAge;
 	}
-	
+
 	public String getUserPhone() {
 		return userPhone;
 	}
-	
+
 	public void setUserPhone(String userPhone) {
 		this.userPhone = userPhone;
 	}
-	
+
 	public Date getUserDate() {
 		return userDate;
 	}
-	
+
 	public void setUserDate(Date userDate) {
 		this.userDate = userDate;
 	}
-	
-	// setter <= ´©±º°¡¿¡ ÀÇÇØ¼­ °ªÀ» ÀúÀå½ÃÅ°´Â ¿ªÇÒÇÔ.
-	// getter <= ´©±º°¡¿¡ ÀÇÇØ¼­ °ªÀ» °¡Áö°í ¿ªÇÒÇÔ.
-	
-	
 
-	}
+	// setter <= ëˆ„êµ°ê°€ì— ì˜í•´ì„œ ê°’ì„ ì €ì¥ì‹œí‚¤ëŠ” ì—­í• í•¨.
+	// getter <= ëˆ„êµ°ê°€ì— ì˜í•´ì„œ ê°’ì„ ê°€ì§€ê³  ì—­í• í•¨.
 
-
+}

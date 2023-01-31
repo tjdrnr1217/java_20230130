@@ -3,50 +3,50 @@ package main1;
 public class Main2 {
 
 	public static void main(String[] args) {
-		
-		int a=1;
-		int b=2;
-		int c=4;
-		int d=5;
-		int e=12;
-		
-		//¹è¿­ÀÇ ¹øÈ£´Â 0ºÎÅÍ ½ÃÀÛÇØ¼­ 4±îÁö(ÀüÃ¼°³¼öÀÇ-1)±îÁö
-		//¹è¿­ÀÇ ÀÎµ¦½º´Â 0ºÎÅÍ...
+
+		int a = 1;
+		int b = 2;
+		int c = 4;
+		int d = 5;
+		int e = 12;
+
+		// ë°°ì—´ì˜ ë²ˆí˜¸ëŠ” 0ë¶€í„° ì‹œì‘í•´ì„œ 4ê¹Œì§€(ì „ì²´ê°œìˆ˜ì˜-1)ê¹Œì§€
+		// ë°°ì—´ì˜ ì¸ë±ìŠ¤ëŠ” 0ë¶€í„°...
 		int i;
-		int sum=0;
-		float avg=0;
-		int[] age = {1,2,4,5,12}; // ³ªÀÌ º¯¼ö°¡ 5°³ »ı¼º
-		for(i=0; i<age.length; i++) {
+		int sum = 0;
+		float avg = 0;
+		int[] age = { 1, 2, 4, 5, 12 }; // ë‚˜ì´ ë³€ìˆ˜ê°€ 5ê°œ ìƒì„±
+		for (i = 0; i < age.length; i++) {
 			System.out.print(age[i]);
 		}
 		System.out.println();
-		
-		//¹®Á¦1)ageÀÇ °ªµéÀ» ¹İ´ë·Î Ãâ·ÂÇÏ¼¼¿ä. 12 5 4 2 1
-			for(i=age.length-1; i>=0; i-- ) {
-				System.out.print(age[i]+ " ");
+
+		// ë¬¸ì œ1)ageì˜ ê°’ë“¤ì„ ë°˜ëŒ€ë¡œ ì¶œë ¥í•˜ì„¸ìš”. 12 5 4 2 1
+		for (i = age.length - 1; i >= 0; i--) {
+			System.out.print(age[i] + " ");
+		}
+		System.out.println();
+		for (i = 0; i < age.length; i++) {
+			System.out.print(age[4 - i] + " ");
+		}
+		System.out.println();
+		// ë¬¸ì œ2) ageì˜ ê°’ë“¤ì„ í•©ê³¼ í‰ê·  êµ¬í•˜ì‹œì˜¤.
+		for (i = 0; i < age.length; i++) {
+			sum += age[i];
+		}
+		avg = (float) sum / (float) age.length;// ì‹¤ìˆ˜ / ì‹¤ìˆ˜
+		System.out.print("í•©ì€=" + sum);
+		System.out.println();
+		System.out.print("í‰ê· ì€=" + avg);
+		System.out.println();
+
+		// ë¬¸ì œ3) age 5ê°œì¤‘ì—ì„œ ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ì„¸ìš”.
+		for (i = 0; i < age.length; i++) {
+			if (age[i] % 2 == 0) {
+				System.out.print(age[i] + ",");
 			}
-			System.out.println();
-			for(i=0; i<age.length; i++) {
-				System.out.print(age[4-i]+ " ");
-			}
-			System.out.println();
-		//¹®Á¦2) ageÀÇ °ªµéÀ» ÇÕ°ú Æò±Õ ±¸ÇÏ½Ã¿À.
-			for(i=0; i<age.length; i++) {
-				sum+=age[i];
-			}
-			avg=(float)sum/(float)age.length;// ½Ç¼ö / ½Ç¼ö
-			System.out.print("ÇÕÀº="+sum);
-			System.out.println();
-			System.out.print("Æò±ÕÀº="+avg);
-			System.out.println();
-			
-		//¹®Á¦3) age 5°³Áß¿¡¼­ Â¦¼ö¸¸ Ãâ·ÂÇÏ¼¼¿ä.
-			for(i=0;i<age.length; i++) {
-				if(age[i]%2 == 0) {
-					System.out.print(age[i]+",");
-				}
-			}
-			
+		}
+
 	}
 
 }
