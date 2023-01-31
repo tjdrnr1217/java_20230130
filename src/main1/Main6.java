@@ -12,7 +12,7 @@ public class Main6 {
 		item.setDate(new Date());
 		item.setName("사과");
 		item.setNo(100L);
-		item.setPrice(56);
+		item.setPrice(10000);
 		item.setQuantity(10000);
 		
 		// 2. 20% 할인한 금액으로 자동계산 될 수 있는 기능
