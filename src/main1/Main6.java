@@ -8,12 +8,13 @@ public class Main6 {
 	public static void main(String[] args) {
 		// 1. 물품등록
 		Item item = new Item();	
+		
 		item.setContent("상큼함");
 		item.setDate(new Date());
 		item.setName("사과");
 		item.setNo(100L);
 		item.setPrice(10000);
-		item.setQuantity(10000);
+		item.setQuantity(89);
 		
 		// 2. 20% 할인한 금액으로 자동계산 될 수 있는 기능
 		item.disCountPrice(0.2f);
