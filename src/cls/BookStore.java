@@ -1,10 +1,10 @@
 package cls;
-
+//2023.02.01(2)
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-//2023.02.01(2)
+
 //책판매
 @Getter
 @Setter
