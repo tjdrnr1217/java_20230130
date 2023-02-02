@@ -18,6 +18,6 @@ public class Register {//수강신청
 	private Student student = null; // 학생
 	private Date date = new Date();
 	
-	//Main5에서 수강신청하기(2개 수강하기)
+	//Main5에서 수강신청하기(1개 수강하기)
 
 }

@@ -10,12 +10,9 @@ import cls.Student;
 public class Main5 {
 
 	public static void main(String[] args) {
+		// Main은 클레스를 테스트하기위한 용도
 		// 1.학생등록
-			Student student = new Student();
-			student.setNo(100);
-			student.setName("a");
-			student.setGrade(1);
-			student.setDate(new Date());
+			Student student = new Student(1, "가", 5, new Date());
 			
 		// 2.교수등록.
 			Professor professor = new Professor(1, "a", "603", new Date());
