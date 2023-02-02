@@ -18,8 +18,8 @@ public class AddressMain {
 		System.out.println(address.getday());
 		
 		
-
 		
+	
 		
 	}
 
