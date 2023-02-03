@@ -17,12 +17,12 @@ import lombok.ToString;
 @NoArgsConstructor //(빈곳)
 @AllArgsConstructor //(준비물 필요한 곳)
 public class Book {
-	private long no = 0L;
-	private String title = null;
-	private String author = null;
-	private long price = 0;
-	private char cate = 'A';
-	private Date date = null;
+	private long no = 0L; //번호
+	private String title = null; //이름
+	private String author = null; //내용
+	private long price = 0; // 가격
+	private char cate = 'A'; //권한
+	private Date date = null; //날
 
 	// 메소드(함수)
 	public void print() { // void 반환타입이 있다.

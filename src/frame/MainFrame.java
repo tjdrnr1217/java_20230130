@@ -4,6 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class MainFrame extends JFrame {
 	public MainFrame() {
@@ -15,6 +17,11 @@ public class MainFrame extends JFrame {
 		menuBar.add(menu);
 		
 		JMenuItem mntmNewMenuItem = new JMenuItem("학생등록");
+		mntmNewMenuItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new JoinFrame();
+			}
+		});
 		menu.add(mntmNewMenuItem);
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("정보수정");
