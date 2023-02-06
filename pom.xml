@@ -19,7 +19,6 @@
   라이브러리 생성 방법 젤위에 파일 오른쪽 마우스 -> configure -> 젤 밑에꺼
   (구글에 lombok maven 검색하면 나온다) -->
 	<dependencies>
-		
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver-sync</artifactId>
