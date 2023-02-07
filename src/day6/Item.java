@@ -13,7 +13,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {
-	private int code = 0; // 물품코드
+	private long code = 0; // 물품코드
 	private String name = null; // 물품명
 	private String content = null; // 물품설명
 	private int price = 0; // 물품가격

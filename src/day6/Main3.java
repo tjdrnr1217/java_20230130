@@ -8,12 +8,13 @@ public class Main3 {
 		//출력
 		mDB.printItems();
 		
+		//삭제
 		//int ret = mDB.deleteItem(2);
 		//System.out.println(ret);
 		
 		
 		
-		// 추가
+		//변경
 		/*ItemDB IDB = new ItemDB();
 		
 		Item item = new Item();
@@ -26,12 +27,12 @@ public class Main3 {
 		int ret = IDB.updateItem(item);
 		System.out.println(ret);*/
 		
-		
-		//ItemDB IDB = new ItemDB();
-		//Item item = new Item(3, "뭐", "고", 100, 5, new Date());
+		//등록
+		/*ItemDB IDB = new ItemDB();
+		Item item = new Item(3, "뭐", "고", 100, 5, new Date());
 
-		//int ret = IDB.insertItem(item);
-		//System.out.println(ret);
+		int ret = IDB.insertItem(item);
+		System.out.println(ret); */
 	}
 
 }
