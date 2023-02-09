@@ -2,14 +2,18 @@ package day7;
 
 import java.util.List;
 
+import day9.Board;
+import day9.BoardDAO;
+import day9.BoardDAOImpl;
+
 //2023.02.07(1)
 public class Main {
 
 	public static void main(String[] args) {
 		//설계도면 객체 = new 구현한클레스의생성자();
 		BoardDAO obj = new BoardDAOImpl();
-		List<Board> ret = obj.selectBoardHitList(50L);
-		System.out.println(ret);
+//		List<Board> ret = obj.selectBoardHitList(50L);
+//		System.out.println(ret);
 		
 		//Board brd = obj.selectBoardHitList(0)
 		
@@ -50,14 +54,14 @@ public class Main {
 		
 //		
 //		Board board = new Board ();
-//		board.setBrdTitle("제목");
-//		board.setBrdContent("내용");
-//		board.setBrdWriter("작성자");
+//		board.setBrdTitle("이");
+//		board.setBrdContent("제");
+//		board.setBrdWriter("그만");
 //		
 //		int ret = obj.insertBoard(board);
 //		System.out.println(ret);
 //		
-		
+	
 		
 
 		
