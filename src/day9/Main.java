@@ -29,7 +29,7 @@ public class Main {
 }
 //			
 
-//			BoardDAO boardDAO = new BoardDAOImpl();
+//			BoardDAO boardDAO = new BoardDAOImpl();a
 //			List<Board> list = boardDAO.selectBoardList();
 //			for(Board board : list) {
 //				System.out.println("게시글번호 => " + board.getBrdno());
