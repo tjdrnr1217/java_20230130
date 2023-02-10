@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			BoardDAO boardDAO = new BoardDAOImpl();
-			List<Board> list = boardDAO.selectBoardList(5);
-			System.out.println(boardDAO.selectiBoardReplyCount(1));
+			List<Board> list = boardDAO.selectBoardList(1);
+			System.out.println(boardDAO.selectiBoardReplyCount(3));
 			for (Board board : list) {
 				System.out.println("게시글번호 => " + board.getBrdno());
 				System.out.println("게시글제목 => " + board.getBrdTitle());
@@ -29,7 +29,7 @@ public class Main {
 }
 //			
 
-//			BoardDAO boardDAO = new BoardDAOImpl();a
+//			BoardDAO boardDAO = new BoardDAOImpl();
 //			List<Board> list = boardDAO.selectBoardList();
 //			for(Board board : list) {
 //				System.out.println("게시글번호 => " + board.getBrdno());

@@ -6,6 +6,7 @@ public class Config {
 	// 서버접속정보
 	public static final String URL = "mongodb://id207:pw207@1.234.5.158:37017/db207";
 	
+	//데이터베이스 명칭
 	// 사용할 수 있는 인원정보
 	public static final int MAX = 10000;
 	
@@ -20,4 +21,7 @@ public class Config {
 	
 	// 시퀀스용 컬렉션 명칭(테이블)
 	public static final String RESEQUNCECOL = "sequence";
+	
+	public static final String MEMBERCOL = "members";
+	public static final String ADDRESSCOL = "addresses";
 }

@@ -232,15 +232,15 @@ public class BoardDAOImpl implements BoardDAO {
 		try {
 			// 1 전체 게시글을 가져옴
 			FindIterable<Document> list = this.boardColl.find();
-			
+
 			// 2. 반복한다.
 			List<Board> retList = new ArrayList<Board>();
-			for(Document doc : list) {
+			for (Document doc : list) {
 				// 3. 게시글 번호를 이용해서 답글의 개수를 구한다.
 				Bson filter = Filters.eq("board", doc.getLong("_id"));
-				
+
 				long replyCount = this.replies.countDocuments(filter);
-				if(replyCount >= n) { //답글의 개수가 전달받는 n보다 크다면
+				if (replyCount >= n) { // 답글의 개수가 전달받는 n보다 크다면
 					Board board = new Board(); // board객체를 만든다.
 					board.setBrdno(doc.getLong("_id"));
 					board.setBrdTitle(doc.getString("brdTitle"));
@@ -252,10 +252,9 @@ public class BoardDAOImpl implements BoardDAO {
 				}
 			}
 			return retList; // if에 필터된 항목으로 구성된 retList를 반환한다.
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
 }
-
