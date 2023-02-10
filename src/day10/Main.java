@@ -10,9 +10,18 @@ public class Main {
 		AddressDB aDB = new AddressDBImpl();
 		
 		Member member = new Member();
-		member.setId("ccc2");
+		member.setId("ccc1");
 		
 		List<Address> list = aDB.selectAddressList(member);
+		for(Address address : list) {		
+			System.out.println(address.getCode());
+			System.out.println(address.getAddress());
+			System.out.println(address.getPostcode());
+			System.out.println(address.getRegdate());
+			System.out.println(address.getMemberid());
+			}
+			System.out.println("--------------------------------");
+		}
 		
 
 //		Member member = new Member();
@@ -107,6 +116,6 @@ public class Main {
 //		System.out.println(age);
 
 	}
-}
+
 
 
