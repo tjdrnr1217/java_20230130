@@ -1,5 +1,7 @@
 package day11;
 
+import java.util.Date;
+
 import lombok.Data;
 
 @Data
@@ -16,5 +18,6 @@ public class Titanic {
 	private String cabin = null; // 객실 번호	 
 	private int passengerid = 0;
 	private String embarked = null; // 탑승한 곳(항구)	C = Cherbourg, Q = Queenstown, S = Southampton
+	private Date regdate = null;
 
 }

@@ -8,7 +8,26 @@ public class Main {
 	public static void main(String[] args) {
 		
 		RestTitanic titanic = new RestTitanic();
-		titanic.parseData();
+		List<Titanic> list = titanic.parseData();
+		int count = 0;
+		for(Titanic t : list) {
+			System.out.print(t.getAge()+", ");
+			System.out.print(t.getCabin()+",");
+			System.out.print(t.getEmbarked()+",");
+			System.out.print(t.getFare()+",");
+			System.out.print(t.getName()+",");
+			System.out.print(t.getParch()+",");
+			System.out.print(t.getPassengerid()+",");
+			System.out.print(t.getPclass()+",");
+			System.out.print(t.getSex()+",");
+			System.out.print(t.getSibsp()+",");
+			System.out.print(t.getSurvived()+",");
+			System.out.print(t.getTicket()+",");
+			System.out.println();
+			System.out.println("-----------------------------------");
+			count++;
+		}
+		System.out.println(count);
 		
 //		RestClient10 client = new RestClient10();
 //		
