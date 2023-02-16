@@ -21,6 +21,7 @@ public class Config {
 	
 	// 시퀀스용 컬렉션 명칭(테이블)
 	public static final String RESEQUNCECOL = "sequence";
+	public static final String BOARDCOL = "boards";
 	
 	public static final String MEMBERCOL = "members";
 	public static final String ADDRESSCOL = "addresses";
