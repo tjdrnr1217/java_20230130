@@ -32,7 +32,7 @@ public class BoardDBImpl implements BoardDB {
 		try {
 			Document doc = this.squenec.findOneAndUpdate(Filters.eq("_id", "SEQ_ADDRESS_CODE"), 
 						Updates.inc("idx", 1));
-			long code = (long) doc.get("idx");
+			long code = (long)doc.get("idx");
 						
 			Document doc1 = new Document();
 			doc1.append("_id",code);

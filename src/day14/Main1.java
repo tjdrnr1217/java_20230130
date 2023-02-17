@@ -9,16 +9,16 @@ public class Main1 {
 		BoardDB bdb = new BoardDBImpl();
 		Board b = new Board();
 
-		List<Board> list = bdb.selectBoardList(2);
-		for (Board ba : list) {
-			System.out.println(ba.getBrdno());
-			System.out.println(ba.getBrdTitle());
-			System.out.println(ba.getBrdContent());
-			System.out.println(ba.getBrdWriter());
-			System.out.println(ba.getBrdHit());
-			System.out.println(ba.getBrdDate());
-			System.out.println("-------------------");
-		}
+//		List<Board> list = bdb.selectBoardList(2);
+//		for (Board ba : list) {
+//			System.out.println(ba.getBrdno());
+//			System.out.println(ba.getBrdTitle());
+//			System.out.println(ba.getBrdContent());
+//			System.out.println(ba.getBrdWriter());
+//			System.out.println(ba.getBrdHit());
+//			System.out.println(ba.getBrdDate());
+//			System.out.println("-------------------");
+//		}
 
 		// 하나만 출력
 //		Board b = bdb.selectBoardOne(3L);
@@ -40,16 +40,16 @@ public class Main1 {
 //		bdb.deleteBoardOne(7L);
 
 		// 추가
-//		b.setBrdTitle("후후");
-//		b.setBrdContent("히히");
-//		b.setBrdWriter("니니");
-//		b.setBrdHit(500);
-//		b.setBrdDate(new Date());
-//		
-//		int ret = bdb.insertBoardOne(b);
-//		System.out.println(ret);
-//		
-//
+		b.setBrdTitle("쿠쿠");
+		b.setBrdContent("하세요");
+		b.setBrdWriter("쿠쿠");
+		b.setBrdHit(500);
+		b.setBrdDate(new Date());
+		
+		int ret = bdb.insertBoardOne(b);
+		System.out.println(ret);
+		
+
 	}
-//
+
 }

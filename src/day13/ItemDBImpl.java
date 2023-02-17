@@ -31,6 +31,7 @@ public class ItemDBImpl implements ItemDB {
 		this.items = MongoClients.create(Config.URL).getDatabase(Config.DBNAME).getCollection(Config.ITEMCOL);
 	}
 
+	// 물품 전체 목록
 	@Override
 	public List<Map<String, Object>> selectItemListMap(int n) {
 		try {
@@ -58,6 +59,7 @@ public class ItemDBImpl implements ItemDB {
 		return null;
 	}
 
+	// 물품 등록
 	@Override
 	public int insertItemMap(Map<String, Object> map) {
 		try {
@@ -86,6 +88,7 @@ public class ItemDBImpl implements ItemDB {
 
 	}
 
+	// 물품 1개 삭제 ex)1004
 	@Override
 	public int deleteItemOne(long no) {
 		try {
@@ -101,6 +104,7 @@ public class ItemDBImpl implements ItemDB {
 		return -1;
 	}
 
+	//물품 n개 삭제 ex{1004,1007,1010}
 	@Override
 	public int deleteItemMany(long[] no) {
 		try {
@@ -124,6 +128,7 @@ public class ItemDBImpl implements ItemDB {
 		return 0;
 	}
 
+	// 물품 수정(name, content, price, quantity)를 변경하기
 	@Override
 	public int updateItemOne(Item item) {
 		try {

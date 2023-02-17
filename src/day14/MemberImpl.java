@@ -54,25 +54,25 @@ public class MemberImpl implements MemberDB {
 	public Member MemberLogin(Map<String, Object> map) {
 		try {
 // 			2.
-//			Bson id = Filters.eq("_id", map.get("_id"));
-//			Bson pw = Filters.eq("password", map.get("password"));
-//			
-//			Bson filter = Filters.and(id,pw);
-//			
-//			Document doc  = this.members.find(filter).first();
-//			
-//			Member member = new Member();
-//			member.setId(doc.getString("_id"));
-//			member.setPassword(doc.getString("password"));
-//			member.setName(doc.getString("name"));
-//			member.setPhone(doc.getString("phone"));
-//			member.setRole(doc.getString("role"));
-//			member.setAge(doc.getInteger("age"));
-//			member.setRegdate(doc.getDate("regdate"));
-//			
-//			if(doc.getString("_id").equals(map.get("_id")) && doc.getString("password").equals(map.get("password"))) 
-//				return member;{		
-//			}
+			Bson id = Filters.eq("_id", map.get("_id"));
+			Bson pw = Filters.eq("password", map.get("password"));
+			
+			Bson filter = Filters.and(id,pw);
+			
+			Document doc  = this.members.find(filter).first();
+			
+			Member member = new Member();
+			member.setId(doc.getString("_id"));
+			member.setPassword(doc.getString("password"));
+			member.setName(doc.getString("name"));
+			member.setPhone(doc.getString("phone"));
+			member.setRole(doc.getString("role"));
+			member.setAge(doc.getInteger("age"));
+			member.setRegdate(doc.getDate("regdate"));
+			
+			if(doc.getString("_id").equals(map.get("_id")) && doc.getString("password").equals(map.get("password"))) 
+				return member;{		
+			}
 
 		} catch (Exception e) {
 
